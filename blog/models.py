@@ -1,9 +1,7 @@
 from django.db import models
-from django.contrib.auth.models import User  # Import models to connect
-
+from django.contrib.auth.models import User # Import models to connect
 
 STATUS = ((0, "Draft"), (1, "Published"))
-
 
 # Create your models here.
 class Post(models.Model):
@@ -39,3 +37,4 @@ class Comment(models.Model):
 
     def __str__(self):
         return f"Comment {self.body} by {self.author}"
+        
